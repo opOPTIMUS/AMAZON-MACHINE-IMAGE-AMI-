@@ -5,6 +5,7 @@ To create an Amazon Machine Image (AMI) on AWS and set up simple web hosting wit
 
 1. **Login to AWS Console:**
    - Go to the [AWS Management Console](https://aws.amazon.com/console/).
+![instance](https://github.com/user-attachments/assets/688a8247-59eb-4aef-813b-22b0487284f4)
 
 2. **Launch an EC2 Instance:**
    - Navigate to **EC2** under the "Compute" section.
