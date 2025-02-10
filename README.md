@@ -18,6 +18,8 @@ To create an Amazon Machine Image (AMI) on AWS and set up simple web hosting wit
      - Ensure that **HTTP (port 80)** is allowed for public access.
      - Allow **SSH (port 22)** for SSH access.
    - Launch the instance and select or create a **key pair** to use for SSH access.
+   
+![copy_public_ip](https://github.com/user-attachments/assets/803425e8-7bbd-4612-91a5-86e23d7e5fbd)
 
 3. **Get the Public IP:**
    - Once the instance is running, note down the **public IP** of the instance from the EC2 dashboard.
@@ -32,6 +34,9 @@ To create an Amazon Machine Image (AMI) on AWS and set up simple web hosting wit
 3. **Connect** to the instance.
 
 ### Step 3: Set Up a Simple Web Hosting with Apache (`httpd`)
+![termius1](https://github.com/user-attachments/assets/e1b3761d-65ce-4be5-ad50-3360ab32c9e4)
+![termius2](https://github.com/user-attachments/assets/441a89a7-da26-4382-8b24-9f01714a6364)
+
 
 1. Once logged in via SSH, update the instance:
    ```bash
@@ -48,10 +53,13 @@ To create an Amazon Machine Image (AMI) on AWS and set up simple web hosting wit
    sudo systemctl start httpd
    sudo systemctl enable httpd
    ```
+![publicip1](https://github.com/user-attachments/assets/19a81acb-8c7d-41d4-9db0-e219484515be)
 
 4. **Verify Apache is running:**
    - Open your browser and enter the **public IP** of your instance.
    - You should see the Apache default web page.
+   
+![termius3](https://github.com/user-attachments/assets/80ccef50-3456-4c2a-b9d3-bf3d716070f2)
 
 5. **Optional: Create a simple HTML page:**
    - Navigate to the web root directory:
@@ -82,6 +90,8 @@ To create an Amazon Machine Image (AMI) on AWS and set up simple web hosting wit
 4. **Note** the **public IP** of the new instance (`amalinuxamiimage`).
 
 ### Step 6: Verify the Web Hosting on the New Instance
+
+![publicip2](https://github.com/user-attachments/assets/37321be2-2ce2-4f0a-aaa0-1e71ede0a6bf)
 
 1. Open your browser and enter the **public IP** of the new instance (`amalinuxamiimage`).
 2. You should see the same web page (i.e., "Hello from EC2!") that was set up earlier, confirming that the AMI was successfully created and launched.
