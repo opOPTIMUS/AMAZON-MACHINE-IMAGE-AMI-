@@ -5,6 +5,7 @@ To create an Amazon Machine Image (AMI) on AWS and set up simple web hosting wit
 
 1. **Login to AWS Console:**
    - Go to the [AWS Management Console](https://aws.amazon.com/console/).
+     
 ![instance](https://github.com/user-attachments/assets/688a8247-59eb-4aef-813b-22b0487284f4)
 
 2. **Launch an EC2 Instance:**
@@ -34,9 +35,9 @@ To create an Amazon Machine Image (AMI) on AWS and set up simple web hosting wit
 3. **Connect** to the instance.
 
 ### Step 3: Set Up a Simple Web Hosting with Apache (`httpd`)
+
 ![termius1](https://github.com/user-attachments/assets/e1b3761d-65ce-4be5-ad50-3360ab32c9e4)
 ![termius2](https://github.com/user-attachments/assets/441a89a7-da26-4382-8b24-9f01714a6364)
-
 
 1. Once logged in via SSH, update the instance:
    ```bash
@@ -58,7 +59,7 @@ To create an Amazon Machine Image (AMI) on AWS and set up simple web hosting wit
 4. **Verify Apache is running:**
    - Open your browser and enter the **public IP** of your instance.
    - You should see the Apache default web page.
-   
+     
 ![termius3](https://github.com/user-attachments/assets/80ccef50-3456-4c2a-b9d3-bf3d716070f2)
 
 5. **Optional: Create a simple HTML page:**
@@ -72,7 +73,8 @@ To create an Amazon Machine Image (AMI) on AWS and set up simple web hosting wit
      ```
 
 6. **Verify** by refreshing the public IP in your browser again to see your custom page.
-
+   
+![AMI step](https://github.com/user-attachments/assets/c1062609-ed76-49d6-b11a-5df1217eb23b)
 ### Step 4: Create an AMI from the Running Instance
 
 1. In the **EC2 Console**, go to the **Instances** section.
@@ -80,6 +82,8 @@ To create an Amazon Machine Image (AMI) on AWS and set up simple web hosting wit
 3. Fill in the **AMI name** (e.g., `amalinux-ami-image`) and other options.
 4. Click **Create Image**.
    - AWS will create an image of your instance. This process may take several minutes.
+     
+![ami](https://github.com/user-attachments/assets/620768c3-a99f-4973-b1c0-9e2e6189f4fd)
 
 ### Step 5: Launch a New Instance from the AMI
 
