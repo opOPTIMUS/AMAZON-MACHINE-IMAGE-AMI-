@@ -46,7 +46,7 @@ To create an Amazon Machine Image (AMI) on AWS and set up simple web hosting wit
 
 2. **Install Apache (`httpd`):**
    ```bash
-   sudo yum install -y httpd
+   sudo yum install httpd -y
    ```
 
 3. **Start Apache service** and enable it to start on boot:
